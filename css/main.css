@@ -2,6 +2,32 @@ body {
   margin: 60px auto;
   width: 80%;
 }
+.container {
+  width: 100%;
+  float: left;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 20px;
+}
+.blurb {
+  width: 70%;
+  float: left;
+}
+
+.sidepanel {
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  background: #f1f2f6;
+  float: right;
+}
+
+.sidepanel_text{
+  text-align: left;
+  margin: 20px;
+}
+
 nav ul, footer ul, h2 ul {
   font-family:'Patua One', cursive;
   padding: 0px;
@@ -17,7 +43,7 @@ a {
   color: #999;
 }
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: #333;
 }
 h1 {
@@ -37,7 +63,7 @@ p {
   color: #333;
 }
 footer {
-  border-top: 1px solid #d5d5d5;
+  float: none;
   font-size: .8em;
 }
 
@@ -57,7 +83,7 @@ ul.posts li {
   color: #333;
 }
 
-.experience .details ul li {
+.experience .details ul li, .sidepanel_text ul li {
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.7em;
