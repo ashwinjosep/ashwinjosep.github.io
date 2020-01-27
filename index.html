@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
 	<head>
 		<title>Ashwin Jose Poruthukaran</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Patua+One&display=swap"
 		 rel="stylesheet">
+		<script type="text/javascript" src="/scripts/script.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -14,7 +16,26 @@
 				<li>
 					<a href="/AshwinJosePoruthukaranResume.pdf" target="_blank">CV</a>
 				</li>
-				<!-- <li><a href="">Contact</a></li> -->
+				<li>
+					<a href="" onclick="scrollOnClick(experience); return false">
+						Work Experience
+					</a>
+				</li>
+				<li>
+					<a href="" onclick="scrollOnClick(academics); return false">
+						Academics
+					</a>
+				</li>
+				<li>
+					<a href="" onclick="scrollOnClick(projects); return false">
+						Projects
+					</a>
+				</li>
+				<li>
+					<a href="" onclick="scrollOnClick(contact); return false">
+						Contacts
+					</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="container">
@@ -35,7 +56,7 @@
 						opportunities.
 					</p>
 				</div><!-- statement -->
-				<div class="experience">
+				<div class="experience" id="experience">
 					<h2>Work Experience</h2>
 					<h3>
 						Business Technology Analyst, Deloitte USI, Bengaluru, India
@@ -84,7 +105,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="academics">
+				<div class="academics" id="academics">
 					<h2>Academics</h2>
 					<ul>
 						<li>
@@ -97,7 +118,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="projects">
+				<div class="projects" id="projects">
 					<h2>Projects</h2>
 					<div class="yelp">
 						<a href="https://github.com/ashwinjosep/Yelp_Data_Visualization"
@@ -137,7 +158,7 @@
 							MATLAB <br><br>
 						</div>
 					</div>
-					<div class="driving_companion">
+					<div class="driving_companion" id="contact">
 						<a href="https://github.com/ashwinjosep/Driving_Companion"
 						target="_blank">
 							<h3>
@@ -210,8 +231,13 @@
 				</div>
 			</div><!-- sidepanel -->
 		</div><!-- /.container -->
-		<footer>
+		<footer id="contact">
 			<ul>
+				<li>
+					<a href="#">
+						Home
+					</a>
+				</li>
 				<li>
 					<a href="mailto:ashwinjosep94@gmail.com">
 						ashwinjosep94@gmail.com
