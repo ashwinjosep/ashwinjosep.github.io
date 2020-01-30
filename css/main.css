@@ -1,16 +1,54 @@
+:root {
+  --primary-color: #34495e;
+  --secondary-color: #778ca3;
+}
+
 html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 60px auto;
-  width: 80%;
+  margin: 30px auto;
+  color: var(--primary-color);
+  /* width: 80%; */
 }
-.container {
+
+nav a{
+  font-family:'Patua One', cursive;
+  color: var(--secondary-color);
+}
+
+nav a:hover {
+  text-decoration: none;
+  transition: all 0.5s ease;
+  color: var(--primary-color);
+}
+
+.navbar {
+  background-color: #f1f2f6;
+}
+
+/* nav{
+  width: 80%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  border-bottom: 1px solid #d5d5d5;
+  z-index: 999;
+} */
+
+.page-container {
   width: 100%;
   float: left;
-  border-top: 1px solid #d5d5d5;
-  border-bottom: 1px solid #d5d5d5;
-  margin-bottom: 20px;
+  position: relative;
+}
+
+.content {
+  width: 90%;
+  float: left;
+  padding-top: 65px;
+  margin: 60px;
+  color: var(--primary-color);
+  padding-bottom: 200px;
 }
 .blurb {
   width: 70%;
@@ -18,51 +56,55 @@ body {
 }
 
 .sidepanel {
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 50px;
   width: auto;
   background: #f1f2f6;
-  float: right;
+  color: var(--primary-color);
+  float: left;
 }
 
 .sidepanel_text{
   text-align: left;
+  color: var(--primary-color);
   margin: 20px;
 }
 
-nav ul, footer ul, h2 ul {
+h2 ul, h3 ul {
   font-family:'Patua One', cursive;
   padding: 0px;
   list-style: none;
   /* font-weight: bold; */
 }
-nav ul li, footer ul li, h2 ul li{
+
+h2 ul li, h3 ul li{
   display: inline;
   margin-right: 20px;
 }
-a {
+a h3 {
   text-decoration: none;
-  color: #999;
+  color: var(--secondary-color);
 }
-a:hover {
-  /* text-decoration: underline; */
-  color: #333;
+a h3:hover {
+  text-decoration: none;
+  color: var(--primary-color);
 }
-h1 {
-  font-size: 2em;
+.content h1 {
+  font-size: 1.5em;
   font-family:'Patua One', cursive;
+  color: var(--primary-color);
 }
-h2 {
+.content h2 {
   font-family:'Patua One', cursive;
   font-size: 1.2em;
   line-height: 1.5em;
+  color: var(--primary-color);
   font-weight: normal;
 }
-h3 {
+.content h3 {
     font-family:'Patua One', cursive;
     font-size: 1em;
     line-height: 1.1em;
+    color: var(--primary-color);
     font-weight: normal;
     vertical-align: middle;
 }
@@ -70,25 +112,78 @@ p {
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.5em;
-  color: #333;
+  color: var(--primary-color);
 }
+
 footer {
-  float: none;
-  font-size: .8em;
+  width: 100%;
+  background: var(--primary-color);
+  position: absolute;
+  height: auto;
+  bottom: 0px;
+  /* display: block; */
+  /* font-size: .8em; */
+  padding-top: 10px;
+}
+
+footer h3 {
+  color: white;
+  font-family: 'Patua One', cursive;
+  font-size: 1em;
+  margin: 20px 0 10px;
+}
+
+footer .two-column {
+  overflow: hidden;
+}
+
+footer .two-column li, footer .two-column li a{
+  width: 50%;
+  float: left;
+  padding: 2px 0;
+  font-family: 'Patua One', cursive;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
+
+footer .two-column li:hover, footer .two-column li a:hover {
+  transition: all 0.3s ease-in-out;
+  color: white;
+  text-decoration: none;
+}
+
+footer .social-links {
+  overflow: hidden;
+  margin: 20px 0 10px;
+}
+
+footer .social-links li {
+  float: left;
+  margin: 3px;
+  opacity: 0.5;
+  height: 32px;
+  width: 32px;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .social-links li:hover {
+  opacity: 1;
 }
 
 .regular_text {
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.7em;
-  color: #333;
+  color: var(--primary-color);
 }
 
 .tag_text {
   font-family: 'Patua One', cursive;
   font-size: 0.9em;
   line-height: 1.7em;
-  color: #333;
+  color: var(--primary-color);
 }
 
 ul.posts {
@@ -104,12 +199,12 @@ ul.posts li {
   font-family:'Patua One', cursive;
   font-size: 1em;
   line-height: 2em;
-  color: #333;
+  color: var(--primary-color);
 }
 
-.experience .details ul li, .sidepanel_text ul li {
+.content .experience .details ul li, .sidepanel_text ul li {
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.7em;
-  color: #333;
+  color: var(--primary-color);
 }

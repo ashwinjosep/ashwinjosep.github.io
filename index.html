@@ -2,12 +2,17 @@
 <html>
 <meta charset="UTF-8">
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Ashwin Jose Poruthukaran</title>
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Patua+One&display=swap"
 		 rel="stylesheet">
 		<script type="text/javascript" src="/scripts/script.js"></script>
+		<link rel="stylesheet"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+		crossorigin="anonymous">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157159399-1"></script>
 		<script>
@@ -16,48 +21,36 @@
 		  gtag('js', new Date());
 		  gtag('config', 'UA-157159399-1');
 		</script>
-
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li>
-					<a href="/AshwinJosePoruthukaranResume.pdf" target="_blank">CV</a>
-				</li>
-				<li>
-					<a href="" onclick="scrollOnClick(experience); return false">
+		<nav class ="navbar fixed-top navbar-expand-lg">
+			<a class="nav-link active" href="/">Home</a>
+			<a class="nav-link active" href="/AshwinJosePoruthukaranResume.pdf" target="_blank">CV</a>
+			<a class="nav-link active" href="" onclick="scrollOnClick(experience); return false">
 						Work Experience
-					</a>
-				</li>
-				<li>
-					<a href="" onclick="scrollOnClick(academics); return false">
+			</a>
+			<a class="nav-link active" href="" onclick="scrollOnClick(academics); return false">
 						Academics
-					</a>
-				</li>
-				<li>
-					<a href="" onclick="scrollOnClick(projects); return false">
+			</a>
+			<a class="nav-link active" href="" onclick="scrollOnClick(projects); return false">
 						Projects
-					</a>
-				</li>
-				<li>
-					<a href="" onclick="scrollOnClick(contact); return false">
+			</a>
+			<a class="nav-link active" href="" onclick="scrollOnClick(contact); return false">
 						Contacts
-					</a>
-				</li>
-			</ul>
+			</a>
 		</nav>
-		<div class="container">
+		<div class="page-container">
+		<div class="content" id="content">
 			<div class="blurb">
 				<h1>Hi there, I'm Ashwin Jose Poruthukaran!</h1>
-				<h2>
+				<h3>
 					<ul>
 						<li>Software Developer</li>
 						<li>Full Stack Developer</li>
 						<li>Mobile Developer</li>
 						<li>Graphic Designer</li>
 					</ul>
-				</h2>
+				</h3>
 				<div class="statement">
 					<p>
 						I'm a Computer Science graduate with 2 years of experience in the
@@ -167,7 +160,7 @@
 							MATLAB <br><br>
 						</div>
 					</div>
-					<div class="driving_companion" id="contact">
+					<div class="driving_companion">
 						<a href="https://github.com/ashwinjosep/Driving_Companion"
 						target="_blank">
 							<h3>
@@ -184,6 +177,23 @@
 						<div class="tag_text">
 							Android, Fitbit SDK, Google Maps SDK, Python, Pandas, Scipy,
 							Flask <br><br>
+						</div>
+					</div>
+					<div class="aes">
+						<a href="https://github.com/ashwinjosep/Advanced_Encryption_Scheme"
+						target="_blank">
+							<h3>
+								Advanced Encryption Scheme (AES)
+							</h3>
+						</a>
+						<div class="regular_text">
+							Developed a C++ application that implements basic AES-128,192 and
+							256 with a CBC mode and PKCS7 padding.Considering timing and cache
+							attacks, bit slicing was also implemented to improve resistance.
+							<br>
+						</div>
+						<div class="tag_text">
+							 C++, BCryptGenAPI<br><br>
 						</div>
 					</div>
 				</div>
@@ -240,39 +250,87 @@
 				</div>
 			</div><!-- sidepanel -->
 		</div><!-- /.container -->
-		<footer id="contact">
-			<ul>
-				<li>
-					<a href="#">
-						Home
-					</a>
-				</li>
-				<li>
-					<a href="mailto:ashwinjosep94@gmail.com">
-						ashwinjosep94@gmail.com
-					</a>
-				</li>
-				<li>
-					<a href="mailto:aporuthu@asu.edu" target="_blank">
-						aporuthu@asu.edu
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/ashwinjosep" target="_blank">
-						Github
-					</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/ashwinjose/" target="_blank">
-						LinkedIn
-					</a>
-				</li>
-				<li>
-					<a href="https://www.behance.net/ashwinjosep" target="_blank">
-						Behance
-					</a>
-				</li>
-			</ul>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-5 col-xs-5 col-sm-5">
+						<h3>Site Map</h3>
+						<ul class="list-unstyled two-column">
+							<li>
+								<a href="" onclick="scrollOnClick(nav); return false">
+									Home
+								</a>
+							</li>
+							<li>
+								<a href="" onclick="scrollOnClick(experience); return false">
+									Work Experience
+								</a>
+							</li>
+							<li>
+								<a href="" onclick="scrollOnClick(academics); return false">
+									Academics
+								</a>
+							</li>
+							<li>
+								<a href="" onclick="scrollOnClick(projects); return false">
+									Projects
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="col-lg-8 col-md-6 col-xs-6 col-sm-6">
+						<h3>Contact</h3>
+						<ul class="list-unstyled social-links">
+							<li><img src="assets\GitHub-Mark\PNG\GitHub-Mark-32px.png" alt="" /></li>
+							<li><img src="http://placehold.it/48x48" alt="" /></li>
+							<li><img src="http://placehold.it/48x48" alt="" /></li>
+							<li><img src="http://placehold.it/48x48" alt="" /></li>
+							<li><img src="http://placehold.it/48x48" alt="" /></li>
+							<li><img src="http://placehold.it/48x48" alt="" /></li>
+						</ul>
+					</div> -->
+					<div class="col-lg-7 col-md-7 col-xs-7 col-sm-7">
+						<h3>Contact</h3>
+						<ul class="list-unstyled two-column">
+							<li>
+								<a href="mailto:ashwinjosep94@gmail.com">
+									Mail
+								</a>
+							</li>
+							<li>
+								<a href="mailto:aporuthu@asu.edu" target="_blank">
+									Mail
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/ashwinjosep" target="_blank">
+									Github
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/ashwinjose/" target="_blank">
+									LinkedIn
+								</a>
+							</li>
+							<li>
+								<a href="https://www.behance.net/ashwinjosep" target="_blank">
+									Behance
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</footer>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+		</div>
 	</body>
 </html>
