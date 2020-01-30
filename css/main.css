@@ -5,11 +5,13 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+
 body {
   margin: 30px auto;
   color: var(--primary-color);
-  /* width: 80%; */
+  /* width: 90%; */
 }
 
 nav a{
@@ -27,15 +29,6 @@ nav a:hover {
   background-color: #f1f2f6;
 }
 
-/* nav{
-  width: 80%;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  border-bottom: 1px solid #d5d5d5;
-  z-index: 999;
-} */
-
 .page-container {
   width: 100%;
   float: left;
@@ -43,20 +36,20 @@ nav a:hover {
 }
 
 .content {
-  width: 90%;
+  width: auto;
   float: left;
-  padding-top: 65px;
+  padding-top: 30px;
   margin: 60px;
   color: var(--primary-color);
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 .blurb {
-  width: 70%;
+  width: auto;
   float: left;
 }
 
 .sidepanel {
-  margin-left: 50px;
+  margin-left: 15px;
   width: auto;
   background: #f1f2f6;
   color: var(--primary-color);
@@ -66,7 +59,12 @@ nav a:hover {
 .sidepanel_text{
   text-align: left;
   color: var(--primary-color);
-  margin: 20px;
+  margin: 20px ;
+}
+
+.sidepanel_text ul{
+  list-style:none;
+  display: inline;
 }
 
 h2 ul, h3 ul {
@@ -80,11 +78,21 @@ h2 ul li, h3 ul li{
   display: inline;
   margin-right: 20px;
 }
-a h3 {
+
+.content a {
+  text-decoration: none;
+}
+
+.content a:hover {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.content a h3 {
   text-decoration: none;
   color: var(--secondary-color);
 }
-a h3:hover {
+.content a h3:hover {
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: var(--primary-color);
 }
@@ -169,6 +177,7 @@ footer .social-links li {
 }
 
 footer .social-links li:hover {
+  transition: all 0.3s ease-in-out;
   opacity: 1;
 }
 
