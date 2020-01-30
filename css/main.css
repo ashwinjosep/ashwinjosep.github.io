@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 30px auto;
+  background-color: "#ecf0f1";
   color: var(--primary-color);
   /* width: 90%; */
 }
@@ -33,6 +34,7 @@ nav a:hover {
   width: 100%;
   float: left;
   position: relative;
+  background-color: white;
 }
 
 .content {
@@ -49,14 +51,17 @@ nav a:hover {
 }
 
 .sidepanel {
-  margin-left: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05), 0 5px 10px rgba(0,0,0,0.10);
+  text-align: center;
+  margin-top: 100px;
   width: auto;
-  background: #f1f2f6;
+  background-color: #f1f2f6;
   color: var(--primary-color);
-  float: left;
+  float: right;
 }
 
 .sidepanel_text{
+  padding-top: 80px;
   text-align: left;
   color: var(--primary-color);
   margin: 20px ;
@@ -204,11 +209,22 @@ ul.posts li {
   list-style: none;
 }
 
-.experience ul li, .academics ul li{
+.experience ul li, {
   font-family:'Patua One', cursive;
   font-size: 1em;
   line-height: 2em;
   color: var(--primary-color);
+}
+
+.academics ul li{
+  font-family:'Patua One', cursive;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: var(--primary-color);
+}
+
+.academics ul{
+
 }
 
 .content .experience .details ul li, .sidepanel_text ul li {
@@ -218,6 +234,41 @@ ul.posts li {
   color: var(--primary-color);
 }
 
+.image {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: -100px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+  z-index: 998;
+}
+.image-overlay {
+  position: absolute;
+  opacity: 100%;
+  z-index: 999;
+  top: 0%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: -100px; /* Half the height */
+  margin-left: -100px; /* Half the width */
+}
+
+.image-overlay:hover{
+  transition: all 0.5s ease;
+  opacity: 0%;
+}
+
+@media only screen and (max-width:767px) {
+  /* For mobile phones: */
+  .sidepanel {
+    float: left;
+  }
+}
 @media only screen and (max-width:575px) {
   /* For mobile phones: */
   .content {
@@ -235,6 +286,31 @@ ul.posts li {
   .content {
     padding-top: 90px;
   }
+
+  .image {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: -75px; /* Half the height */
+    margin-left: -75px; /* Half the width */
+    z-index: 998;
+  }
+  .image-overlay {
+    position: absolute;
+    opacity: 100%;
+    z-index: 999;
+    top: 0%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin-top: -75px; /* Half the height */
+    margin-left: -75px; /* Half the width */
+  }
+
 }
 @media only screen and (max-width:290px) {
   /* For mobile phones: */
