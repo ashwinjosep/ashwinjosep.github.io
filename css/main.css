@@ -22,11 +22,11 @@ nav a{
 nav a:hover {
   text-decoration: none;
   transition: all 0.5s ease;
-  color: var(--primary-color);
+  color: white;
 }
 
 .navbar {
-  background-color: #f1f2f6;
+  background-color: var(--primary-color);
 }
 
 .page-container {
@@ -41,7 +41,7 @@ nav a:hover {
   padding-top: 30px;
   margin: 60px;
   color: var(--primary-color);
-  padding-bottom: 300px;
+  padding-bottom: 150px;
 }
 .blurb {
   width: auto;
@@ -216,4 +216,48 @@ ul.posts li {
   font-size: 0.9em;
   line-height: 1.7em;
   color: var(--primary-color);
+}
+
+@media only screen and (max-width:575px) {
+  /* For mobile phones: */
+  .content {
+    padding-bottom: 270px;
+  }
+}
+@media only screen and (max-width:597px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width:321px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 90px;
+  }
+}
+@media only screen and (max-width:290px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 125px;
+  }
+}
+@media only screen and (max-width:215px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 180px;
+  }
+}
+
+@media only screen and (max-width:183px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 220px;
+  }
+}
+@media only screen and (max-width:156px) {
+  /* For mobile phones: */
+  .content {
+    padding-top: 250px;
+  }
 }
