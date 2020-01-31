@@ -172,7 +172,7 @@ h2 ul li, h3 ul li{
   color: var(--primary-color);
 }
 .content h1 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family:'Patua One', cursive;
   color: var(--primary-color);
 }
@@ -257,6 +257,7 @@ footer .social-links li:hover {
 }
 
 .regular_text {
+  text-align: justify;
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.7em;
@@ -280,6 +281,7 @@ ul.posts li {
 }
 
 .experience ul li, {
+  text-align: justify;
   font-family:'Patua One', cursive;
   font-size: 1em;
   line-height: 2em;
@@ -294,6 +296,7 @@ ul.posts li {
 }
 
 .content .experience .details ul li, .sidepanel_text ul li {
+  text-align: justify;
   font-family: 'Roboto Slab', serif;
   font-size: 0.9em;
   line-height: 1.7em;
