@@ -41,7 +41,7 @@ body {
 
 .button {
   float: right;
-  margin: 10px;
+  margin: 8px;
 }
 
 button{
@@ -53,6 +53,11 @@ button{
 button:hover {
   color: white;
   transition: all 0.3s ease;
+}
+
+.navbar-toggler {
+  margin: 2px;
+  float: left;
 }
 
 #hamburgerMenu {
@@ -152,11 +157,12 @@ h2 ul li, h3 ul li{
   transition: all 0.3s ease-in-out;
   text-decoration: none;
 }
-.content a h3 {
+.content a h3, .academics a{
   text-decoration: none;
   color: var(--secondary-color);
 }
-.content a h3:hover {
+
+.content a h3:hover, .academics a:hover {
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   color: var(--primary-color);
@@ -281,10 +287,6 @@ ul.posts li {
   font-size: 1em;
   line-height: 1.5em;
   color: var(--primary-color);
-}
-
-.academics ul{
-
 }
 
 .content .experience .details ul li, .sidepanel_text ul li {
