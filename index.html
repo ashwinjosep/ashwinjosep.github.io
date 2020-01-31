@@ -24,7 +24,7 @@
 		</script>
 	</head>
 	<body>
-		<nav class ="navbar fixed-top navbar-expand-lg">
+		<nav class ="navbar fixed-top navbar-expand-lg" id="originalMenu">
 			<a class="nav-link active" href="/">Home</a>
 			<a class="nav-link active" href="/AshwinJosePoruthukaranResume.pdf" target="_blank">CV</a>
 			<a class="nav-link active" href="" onclick="scrollOnClick(experience); return false">
@@ -37,9 +37,34 @@
 						Projects
 			</a>
 			<a class="nav-link active" href="" onclick="scrollOnClick(contact); return false">
-						Contacts
+						Contact
 			</a>
 		</nav>
+
+		<div class="pos-f-t">
+		  <div class="collapse fixed-top" id="navbarToggleExternalContent">
+		    <div class="bg-dark pt-5">
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(hamburgerMenu); return false">Home</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(experience); return false">
+								Work Experience
+					</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(academics); return false">
+								Academics
+					</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(projects); return false">
+								Projects
+					</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(contact); return false">
+								Contact
+					</a>
+		    </div>
+		  </div>
+		  <nav class="navbar navbar-dark fixed-top bg-dark" id="hamburgerMenu">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		  </nav>
+		</div>
 
 
 		<div class="page-container">
@@ -267,7 +292,7 @@
 						<h3>Site Map</h3>
 						<ul class="list-unstyled two-column">
 							<li>
-								<a href="" onclick="scrollOnClick(nav); return false">
+								<a href="" onclick="scrollOnClick(content); return false">
 									Home
 								</a>
 							</li>

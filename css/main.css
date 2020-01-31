@@ -15,6 +15,14 @@ body {
   /* width: 90%; */
 }
 
+/* .collapse {
+  padding-top: 50px;
+} */
+
+#hamburgerMenu {
+  display: none;
+}
+
 nav a{
   font-family:'Patua One', cursive;
   color: var(--secondary-color);
@@ -26,9 +34,25 @@ nav a:hover {
   color: white;
 }
 
-.navbar {
+.bg-dark a {
+  font-family:'Patua One', cursive;
+  color: var(--secondary-color);
+}
+
+.bg-dark a:hover {
+  font-family:'Patua One', cursive;
+  transition: all 0.5s ease;
+  color: white;
+}
+
+.navbar{
   background-color: var(--primary-color);
 }
+
+.bg-dark {
+  background-color: var(--primary-color) !important;
+}
+
 
 .page-container {
   width: 100%;
@@ -277,15 +301,23 @@ ul.posts li {
 }
 @media only screen and (max-width:597px) {
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 60px;
+  } */
+
+  #hamburgerMenu {
+    display: block;
+  }
+
+  #originalMenu {
+    display: none;
   }
 }
 @media only screen and (max-width:321px) {
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 90px;
-  }
+  } */
 
   .image {
     position: absolute;
@@ -312,28 +344,29 @@ ul.posts li {
   }
 
 }
-@media only screen and (max-width:290px) {
+
+/* @media only screen and (max-width:290px) { */
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 125px;
   }
 }
-@media only screen and (max-width:215px) {
+@media only screen and (max-width:215px) { */
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 180px;
   }
 }
 
-@media only screen and (max-width:183px) {
+@media only screen and (max-width:183px) { */
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 220px;
   }
 }
-@media only screen and (max-width:156px) {
+@media only screen and (max-width:156px) { */
   /* For mobile phones: */
-  .content {
+  /* .content {
     padding-top: 250px;
   }
-}
+} */
