@@ -94,6 +94,9 @@ nav a:hover {
   background-color: var(--primary-color) !important;
 }
 
+.hamburgerOptions {
+  padding-top: 30px;
+}
 
 .page-container {
   width: 100%;
