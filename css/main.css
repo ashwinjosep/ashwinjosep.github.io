@@ -12,12 +12,48 @@ body {
   margin: 30px auto;
   background-color: "#ecf0f1";
   color: var(--primary-color);
-  /* width: 90%; */
 }
 
-/* .collapse {
-  padding-top: 50px;
-} */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.button {
+  float: right;
+  margin: 10px;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  color: var(--secondary-color);
+}
+
+button:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
 
 #hamburgerMenu {
   display: none;
@@ -300,10 +336,6 @@ ul.posts li {
   }
 }
 @media only screen and (max-width:597px) {
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 60px;
-  } */
 
   #hamburgerMenu {
     display: block;
@@ -314,10 +346,6 @@ ul.posts li {
   }
 }
 @media only screen and (max-width:321px) {
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 90px;
-  } */
 
   .image {
     position: absolute;
@@ -343,30 +371,11 @@ ul.posts li {
     margin-left: -75px; /* Half the width */
   }
 
-}
+  #hamburgerMenu {
+    display: block;
+  }
 
-/* @media only screen and (max-width:290px) { */
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 125px;
+  #originalMenu {
+    display: none;
   }
 }
-@media only screen and (max-width:215px) { */
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 180px;
-  }
-}
-
-@media only screen and (max-width:183px) { */
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 220px;
-  }
-}
-@media only screen and (max-width:156px) { */
-  /* For mobile phones: */
-  /* .content {
-    padding-top: 250px;
-  }
-} */
