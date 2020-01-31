@@ -27,7 +27,7 @@
 	</head>
 	<body>
 		<nav class ="navbar fixed-top navbar-expand-lg" id="originalMenu">
-			<a class="nav-link active" href="/">Home</a>
+			<a class="nav-link active" href="" onclick="topFunction()">Home</a>
 			<a class="nav-link active" href="/AshwinJosePoruthukaranResume.pdf" target="_blank">CV</a>
 			<a class="nav-link active" href="" onclick="scrollOnClick(experience); return false">
 						Work Experience
@@ -46,7 +46,7 @@
 		<div class="pos-f-t">
 		  <div class="collapse fixed-top" id="navbarToggleExternalContent">
 		    <div class="bg-dark pt-5">
-					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(hamburgerMenu); return false">Home</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="topFunction(); return false">Home</a>
 					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(experience); return false">
 								Work Experience
 					</a>
@@ -55,6 +55,9 @@
 					</a>
 					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(projects); return false">
 								Projects
+					</a>
+					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(skillset); return false">
+								Skillset
 					</a>
 					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(contact); return false">
 								Contact
@@ -71,6 +74,7 @@
 
 
 		<div class="page-container">
+	 	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<div class="content" id="content">
 			<div class="blurb col-md-7 col-xs-8">
 				<h1>Hi there, I'm Ashwin Jose Poruthukaran!</h1>
@@ -293,7 +297,7 @@
 				</div>
 			</div><!-- /.blurb -->
 			<div class="sidepanel col-md-4 col-xs-7">
-				<img class="image" src="/assets/me.jpg" alt="my portrait image">
+				<img class="image" id="skillset" src="/assets/me.jpg" alt="my portrait image">
 				<img class="image-overlay" src="/assets/me-bluescale.jpg" alt="my portrait image">
 				<div class="sidepanel_text">
 					<!-- skillsets -->

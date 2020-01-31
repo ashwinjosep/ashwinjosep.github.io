@@ -1,27 +1,7 @@
 function scrollOnClick(id) {
   console.log("Inside scroller function");
   var element = document.getElementById(id.id);
-  // var screenWidth = screen.width;
   var headerOffset = 40;
-  // if(screenWidth>597)
-  // {
-  //   headerOffset = 40;
-  // }
-  // else if (screenWidth>321) {
-  //   headerOffset =70;
-  // }
-  // else if (screenWidth>290) {
-  //   headerOffset =100;
-  // }
-  // else if (screenWidth>215) {
-  //   headerOffset =140;
-  // }
-  // else if (screenWidth>183) {
-  //   headerOffset =190;
-  // }
-  // else if (screenWidth>156) {
-  //   headerOffset =220;
-  // }
 
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
@@ -34,6 +14,24 @@ function scrollOnClick(id) {
    });
 }
 
-function toggleHamburgerLinks() {
+//Get the button:
+mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+   });
 }
