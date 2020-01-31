@@ -1,8 +1,8 @@
-function scrollOnClick(id) {
-  console.log("Inside scroller function");
+
+// function to scroll to div
+const scrollOnClick = (id) => {
   var element = document.getElementById(id.id);
   var headerOffset = 40;
-
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;
@@ -14,21 +14,26 @@ function scrollOnClick(id) {
    });
 }
 
-//Get the button:
-mybutton = document.getElementById("myBtn");
+// function to be called on loading the window
+const load = () => {
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  // function to view scroll button based on scrolling
+  const viewScrollButton = () => {
+    mybutton = document.getElementById("myBtn");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = viewScrollButton;
 }
 
-// When the user clicks on the button, scroll to the top of the document
+window.onload = load;
+
+// function to scroll to the top
 function topFunction() {
   window.scrollTo({
       top: 0,
