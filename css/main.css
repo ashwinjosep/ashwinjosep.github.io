@@ -1,6 +1,7 @@
 :root {
   --primary-color: #34495e;
   --secondary-color: #778ca3;
+  --alternate-color: #FFA919;
 }
 
 html {
@@ -65,7 +66,8 @@ button:hover {
 }
 
 nav a{
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   color: var(--secondary-color);
 }
 
@@ -76,12 +78,14 @@ nav a:hover {
 }
 
 .bg-dark a {
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   color: var(--secondary-color);
 }
 
 .bg-dark a:hover {
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   transition: all 0.5s ease;
   color: white;
 }
@@ -142,13 +146,19 @@ nav a:hover {
 }
 
 h2 ul, h3 ul {
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   padding: 0px;
   list-style: none;
   /* font-weight: bold; */
 }
 
-h2 ul li, h3 ul li{
+h2 ul li{
+  display: inline;
+  margin-right: 20px;
+}
+
+h3 ul li {
   display: inline;
   margin-right: 20px;
 }
@@ -173,26 +183,29 @@ h2 ul li, h3 ul li{
 }
 .content h1 {
   font-size: 1.7em;
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   color: var(--primary-color);
 }
 .content h2 {
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   font-size: 1.2em;
   line-height: 1.5em;
   color: var(--primary-color);
-  font-weight: normal;
 }
 .content h3 {
-    font-family:'Patua One', cursive;
+    font-family:'Sen', sans-serif;
+    font-weight: 700;
     font-size: 1em;
     line-height: 1.1em;
     color: var(--primary-color);
-    font-weight: normal;
     vertical-align: middle;
 }
 p {
-  font-family: 'Roboto Slab', serif;
+  text-align: justify;
+  font-family:'Sen', sans-serif;
+  font-weight: 400;
   font-size: 0.9em;
   line-height: 1.5em;
   color: var(--primary-color);
@@ -211,7 +224,8 @@ footer {
 
 footer h3 {
   color: white;
-  font-family: 'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   font-size: 1em;
   margin: 20px 0 10px;
 }
@@ -224,7 +238,8 @@ footer .two-column li, footer .two-column li a{
   width: 50%;
   float: left;
   padding: 2px 0;
-  font-family: 'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   font-size: 0.9em;
   color: var(--secondary-color);
 }
@@ -258,14 +273,16 @@ footer .social-links li:hover {
 
 .regular_text {
   text-align: justify;
-  font-family: 'Roboto Slab', serif;
+  font-family:'Sen', sans-serif;
+  font-weight: 400;
   font-size: 0.9em;
   line-height: 1.7em;
   color: var(--primary-color);
 }
 
 .tag_text {
-  font-family: 'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   font-size: 0.9em;
   line-height: 1.7em;
   color: var(--primary-color);
@@ -282,26 +299,39 @@ ul.posts li {
 
 .experience ul li, {
   text-align: justify;
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 2em;
   color: var(--primary-color);
 }
 
 .academics ul li{
-  font-family:'Patua One', cursive;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
   font-size: 1em;
   line-height: 1.5em;
   color: var(--primary-color);
 }
 
-.content .experience .details ul li, .sidepanel_text ul li {
+.content .experience .details ul li {
   text-align: justify;
-  font-family: 'Roboto Slab', serif;
+  font-family:'Sen', sans-serif;
+  font-weight: 400;
   font-size: 0.9em;
   line-height: 1.7em;
   color: var(--primary-color);
 }
+.sidepanel_text ul li {
+  text-align: justify;
+  font-family:'Sen', sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  line-height: 1.7em;
+  color: var(--primary-color);
+}
+
+
 
 .image {
   position: absolute;
