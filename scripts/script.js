@@ -2,7 +2,7 @@
 // function to scroll to div
 const scrollOnClick = (id) => {
   var element = document.getElementById(id.id);
-  var headerOffset = 40;
+  var headerOffset = 30;
   const bodyRect = document.body.getBoundingClientRect().top;
   const elementRect = element.getBoundingClientRect().top;
   const elementPosition = elementRect - bodyRect;

@@ -16,6 +16,7 @@
 		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 		crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -42,9 +43,9 @@
 			<a class="nav-link active" href="" onclick="scrollOnClick(projects); return false">
 						Projects
 			</a>
-			<a class="nav-link active" href="" onclick="scrollOnClick(contact); return false">
+			<!-- <a class="nav-link active" href="" onclick="scrollOnClick(contact); return false">
 						Contact
-			</a>
+			</a> -->
 		</nav>
 
 		<div class="pos-f-t">
@@ -63,9 +64,9 @@
 					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(skillset); return false">
 								Skillset
 					</a>
-					<a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(contact); return false">
+					<!-- <a class="nav-link active" data-toggle="collapse" data-target="#navbarToggleExternalContent" href="" onclick="scrollOnClick(contact); return false">
 								Contact
-					</a>
+					</a> -->
 		    </div>
 		  </div>
 		  <nav class="navbar navbar-dark fixed-top bg-dark" id="hamburgerMenu">
@@ -78,21 +79,12 @@
 
 
 		<div class="page-container">
-	 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="material-icons">
-keyboard_arrow_up
-</i></button>
+	 	<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fa fa-arrow-up" aria-hidden="true"></i>
+		</button>
 		<div class="content" id="content">
-			<div class="blurb col-md-7 col-xs-8">
+			<div class="blurb">
 				<h1>Hi there, I'm Ashwin Jose Poruthukaran!</h1>
-				<h3>
-					<ul>
-						<li>Software Developer</li>
-						<li>Full Stack Developer</li>
-						<li>Mobile Developer</li>
-						<li>Machine Learning Enthusiast</li>
-						<li>Graphic Designer</li>
-					</ul>
-				</h3>
 				<div class="statement">
 					<p>
 						I'm a Computer Science graduate with 2 years of Software Engineering
@@ -101,6 +93,31 @@ keyboard_arrow_up
 				</div><!-- statement -->
 				<div class="experience" id="experience">
 					<h2>Work Experience</h2>
+					<h3>
+						Research Aide - Ira A Fulton Schools of Engineering, ASU, Tempe, Arizona (February
+						2020 &hyphen; May 2020)
+					</h3>
+					<div class="details">
+						<ul>
+							<li>
+								Worked as a Research Aide under Professor Jnaneshwar Das at School of Science and Earth Exploration.
+							</li>
+							<li>
+								Developed online tools using Python, Django, Docker, Computer
+								Vision and Deep Learning to annotate, train neural networks and
+								further research in multiple domains.
+							</li>
+							<li>
+								Developed tools to study lunar surface craters using data obtained
+								from Lunar Reconnaissance Orbiter.
+							</li>
+							<li style="list-style:none">
+								<div class="tag_text">
+									Python, Django, HTML, CSS, JavaScript, JQuery, Ajax, Docker, TensorFlow
+								</div>
+							</li>
+						</ul>
+					</div>
 					<h3>
 						Business Technology Analyst, Deloitte USI, Bengaluru, India
 						(August 2016 &hyphen; July 2018)
@@ -164,28 +181,117 @@ keyboard_arrow_up
 				</div>
 				<div class="academics" id="academics">
 					<h2>Academics</h2>
-					<ul>
-						<li>
+					<div class="three-column-grid">
+						<div class="three-column-grid-child">
+								Master Of Computer Science
+						</div>
+						<div class="three-column-grid-child">
+							(May 2020)
+						</div>
+						<div class="three-column-grid-child">
 							<a href="https://www.asu.edu/">
-								Master Of Computer Science (May 2020) &hyphen; Arizona State
-								University
+								Arizona State University
 							</a>
-						</li>
-						<li>
+						</div>
+					</div>
+					<div class="three-column-grid">
+						<div class="three-column-grid-child">
+								Bachelor Of Technology in Computer Science
+						</div>
+						<div class="three-column-grid-child">
+							(May 2016)
+						</div>
+						<div class="three-column-grid-child">
 							<a href="https://www.mec.ac.in/">
-								Bachelor Of Technology in Computer Science (2016) &hyphen;
 								Govt. Model Engineering College (CUSAT)
 							</a>
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 				<div class="projects" id="projects">
 					<h2>Projects</h2>
 					<div class="yelp">
+						<a href="https://github.com/ashwinjosep/swm-patent-dashboard"
+						target="_blank">
+							<h3>
+								Interactive Patent Visualization Dashboard <i class="fa fa-github" aria-hidden="true"></i>
+							</h3>
+						</a>
+						<div class="regular_text">
+							Developed an interactive dashboard with a RESTful Spring backend
+							that populates charts and visualizations based	on the results of
+							topic modelling and natural language processing algorithms like
+							LDA, Tfidf and Word vector embeddings. A MySQL database was used
+							to store computed results and REST APIs were implemented using
+							Spring framework. <br>
+						</div>
+						<div class="tag_text">
+							Java, Spring Boot, JUnit, MySQL, HTML, CSS, JavaScript, Ajax,
+							JQuery, Python, Pandas, TensorFlow. <br><br>
+						</div>
+					</div>
+					<div class="driving_companion">
+						<a href="https://github.com/ashwinjosep/Driving_Companion"
+						target="_blank">
+							<h3>
+								Driving Companion &hyphen; Sleep detection from
+								heart&hyphen;rate using Machine Learning <i class="fa fa-github" aria-hidden="true"></i>
+							</h3>
+						</a>
+						<div class="regular_text">
+							Developed an Android application that integrates seamlessly with
+							Fitbit smartwatches to continuously monitor heartrate and detect
+							drowsiness while driving using a combination of ML models like
+							KNN, LR and SVM. The application also identifies driving activity
+							automatically and even offers nearby coffee shop suggestions based
+							on current user location<br>
+						</div>
+						<div class="tag_text">
+							Android, Java, Fitbit SDK, Google Maps SDK, Python, Pandas, Scipy,
+							Flask.<br><br>
+						</div>
+					</div>
+					<div class="sunFit">
+						<a href="https://github.com/ashwinjosep/sunFit"
+						target="_blank">
+							<h3>
+								SunFit &hyphen; Smart Calorie Tracking Android Application with
+								Fitbit Integration <i class="fa fa-github" aria-hidden="true"></i>
+							</h3>
+						</a>
+						<div class="regular_text">
+							Developed an Android application that integrates seamlessly with
+							the user's Fitbit account and allows the user to easily update
+							calorie intake for meals based on menu data scraped from ASU
+							dining hall website data.<br>
+						</div>
+						<div class="tag_text">
+							Android, Java, Fitbit SDK, Google Maps SDK, Python, Pandas, Scipy,
+							Flask.<br><br>
+						</div>
+					</div>
+					<div class="aes">
+						<a href="https://github.com/ashwinjosep/Advanced_Encryption_Scheme"
+						target="_blank">
+							<h3>
+								Advanced Encryption Scheme (AES) <i class="fa fa-github" aria-hidden="true"></i>
+							</h3>
+						</a>
+						<div class="regular_text">
+							Developed a C++ application that implements basic AES-128,192 and
+							256 with a CBC mode and PKCS7 padding. Considering timing and cache
+							attacks, bit slicing was also implemented to improve resistance.
+							<br>
+						</div>
+						<div class="tag_text">
+							 C++, BCryptGenAPI<br><br>
+						</div>
+					</div>
+					<div class="yelp">
 						<a href="https://github.com/ashwinjosep/Yelp_Data_Visualization"
 						target="_blank">
 							<h3>
-								Interactive Yelp data visualization
+								Interactive Yelp data visualization <i class="fa fa-github" aria-hidden="true"></i>
 							</h3>
 						</a>
 						<div class="regular_text">
@@ -242,7 +348,7 @@ keyboard_arrow_up
 						target="_blank">
 							<h3>
 								Identification of Eating & Non-Eating activities using Machine
-								Learning
+								Learning <i class="fa fa-github" aria-hidden="true"></i>
 							</h3>
 						</a>
 						<div class="regular_text">
@@ -255,63 +361,6 @@ keyboard_arrow_up
 						</div>
 						<div class="tag_text">
 							MATLAB <br><br>
-						</div>
-					</div>
-					<div class="driving_companion">
-						<a href="https://github.com/ashwinjosep/Driving_Companion"
-						target="_blank">
-							<h3>
-								Driving Companion &hyphen; Sleep detection from
-								heart&hyphen;rate using Machine Learning
-							</h3>
-						</a>
-						<div class="regular_text">
-							Developed an Android application that integrates seamlessly with
-							Fitbit smartwatches to continuously monitor heartrate and detect
-							drowsiness while driving using a combination of ML models like
-							KNN, LR and SVM. The application also identifies driving activity
-							automatically and even offers nearby coffee shop suggestions based
-							on current user location<br>
-						</div>
-						<div class="tag_text">
-							Android, Java, Fitbit SDK, Google Maps SDK, Python, Pandas, Scipy,
-							Flask.<br><br>
-						</div>
-					</div>
-					<div class="sunFit">
-						<a href="https://github.com/ashwinjosep/sunFit"
-						target="_blank">
-							<h3>
-								SunFit &hyphen; Smart Calorie Tracking Android Application with
-								Fitbit Integration
-							</h3>
-						</a>
-						<div class="regular_text">
-							Developed an Android application that integrates seamlessly with
-							the user's Fitbit account and allows the user to easily update
-							calorie intake for meals based on menu data scraped from ASU
-							dining hall website data.<br>
-						</div>
-						<div class="tag_text">
-							Android, Java, Fitbit SDK, Google Maps SDK, Python, Pandas, Scipy,
-							Flask.<br><br>
-						</div>
-					</div>
-					<div class="aes">
-						<a href="https://github.com/ashwinjosep/Advanced_Encryption_Scheme"
-						target="_blank">
-							<h3>
-								Advanced Encryption Scheme (AES)
-							</h3>
-						</a>
-						<div class="regular_text">
-							Developed a C++ application that implements basic AES-128,192 and
-							256 with a CBC mode and PKCS7 padding. Considering timing and cache
-							attacks, bit slicing was also implemented to improve resistance.
-							<br>
-						</div>
-						<div class="tag_text">
-							 C++, BCryptGenAPI<br><br>
 						</div>
 					</div>
 					<div class="dwe">
@@ -334,9 +383,8 @@ keyboard_arrow_up
 					</div>
 				</div>
 			</div><!-- /.blurb -->
-			<div class="sidepanel col-md-4 col-xs-7">
+			<div class="sidepanel">
 				<img class="image" id="skillset" src="/assets/me.jpg" alt="my portrait image">
-				<img class="image-overlay" src="/assets/me-bluescale.jpg" alt="my portrait image">
 				<div class="sidepanel_text">
 					<!-- skillsets -->
 					<br>
@@ -349,16 +397,18 @@ keyboard_arrow_up
 						<li>ABAP</li>
 						<li>HTML</li>
 						<li>JavaScript</li>
+						<li>Ajax</li>
+						<li>CSS</li>
 						<li>ABAP</li>
-						<li>MATLAB</li>
 						<li>Shell Scripting</li>
-						<li>R</li>
 					</ul>
 					<br>
 					<h2>Libraries and Frameworks</h2>
 					<ul>
-						<li>Java Spring</li>
+						<li>Spring</li>
+						<li>JUnit</li>
 						<li>JDBC</li>
+						<li>Hibernate</li>
 						<li>TensorFlow</li>
 						<li>Pandas</li>
 						<li>Numpy</li>
@@ -402,7 +452,7 @@ keyboard_arrow_up
 		<footer>
 			<div class="container" id="contact">
 				<div class="row">
-					<div class="col-lg-5 col-md-5 col-xs-5 col-sm-5">
+					<!-- <div class="col-lg-5 col-md-5 col-xs-5 col-sm-5">
 						<h3>Site Map</h3>
 						<ul class="list-unstyled two-column">
 							<li>
@@ -426,7 +476,7 @@ keyboard_arrow_up
 								</a>
 							</li>
 						</ul>
-					</div>
+					</div> -->
 					<!-- <div class="col-lg-8 col-md-6 col-xs-6 col-sm-6">
 						<h3>Contact</h3>
 						<ul class="list-unstyled social-links">
@@ -438,35 +488,19 @@ keyboard_arrow_up
 							<li><img src="http://placehold.it/48x48" alt="" /></li>
 						</ul>
 					</div> -->
-					<div class="col-lg-7 col-md-7 col-xs-7 col-sm-7">
-						<h3>Contact</h3>
-						<ul class="list-unstyled two-column">
-							<li>
-								<a href="mailto:ashwinjosep94@gmail.com">
-									Mail
-								</a>
-							</li>
-							<li>
-								<a href="mailto:aporuthu@asu.edu" target="_blank">
-									Mail
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/ashwinjosep" target="_blank">
-									Github
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/ashwinjose/" target="_blank">
-									LinkedIn
-								</a>
-							</li>
-							<li>
-								<a href="https://www.behance.net/ashwinjosep" target="_blank">
-									Behance
-								</a>
-							</li>
-						</ul>
+					<div class="footer-links">
+						<a href="mailto:ashwinjosep94@gmail.com">
+							<i class="fa fa-envelope" aria-hidden="true"></i> Mail
+						</a>
+						<a href="https://github.com/ashwinjosep" target="_blank">
+							<i class="fa fa-github" aria-hidden="true"></i> Github
+						</a>
+						<a href="https://www.linkedin.com/in/ashwinjose/" target="_blank">
+							<i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn
+						</a>
+						<a href="https://www.behance.net/ashwinjosep" target="_blank">
+							<i class="fa fa-behance" aria-hidden="true"></i> Behance
+						</a>
 					</div>
 				</div>
 			</div>
