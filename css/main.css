@@ -1,6 +1,6 @@
 :root {
   --primary-color: #344E5C;
-  --secondary-color: #EFEEEE;
+  --secondary-color: #DEDEEE;
   --alternate-color: #EF3D59;
 }
 
@@ -127,7 +127,7 @@ nav a:hover {
   grid-template-columns: 70% 30%;
 }
 .blurb {
-  border-radius: 50px 0px 0px 0px;
+  border-radius: 25px 0px 0px 0px;
   padding: 30px;
   margin-top: 60px;
   padding-top: 50px;
@@ -139,7 +139,7 @@ nav a:hover {
 }
 
 .sidepanel {
-  border-radius: 0px 50px 0px 0px;
+  border-radius: 0px 25px 0px 0px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
   text-align: center;
   margin-top: 60px;
@@ -175,6 +175,12 @@ h2 ul, h3 ul {
 h2 ul li{
   display: inline;
   margin-right: 20px;
+}
+
+h4 {
+  font-size: 0.9em;
+  font-family:'Sen', sans-serif;
+  font-weight: 700;
 }
 
 h3 ul li {
@@ -270,6 +276,35 @@ ul.posts li {
   list-style: none;
 }
 
+.experience-grid-item {
+  display: table-cell;
+}
+
+.experience-circle
+{
+  text-align: center;
+  height: 0.6em;
+  width: 0.6em;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.25em;
+  margin-left: -0.3em;
+  position: relative;
+  left: 20%;
+}
+
+.experience-line {
+  border-left: 2px solid var(--secondary-color);
+  display: table-cell;
+  height: auto;
+  position: relative;
+  margin-left: -1px;
+  left: 20%;
+  margin-bottom: 1.6em;
+  width: 0.6em
+}
+
 .experience ul li, {
   text-align: justify;
   font-family:'Sen', sans-serif;
@@ -279,12 +314,24 @@ ul.posts li {
   color: var(--primary-color);
 }
 
+.experience-grid {
+  display: grid;
+  grid-template-columns: 3% 97%;
+}
+
+.details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .content .experience .details ul li {
   text-align: justify;
   font-family:'Sen', sans-serif;
   font-weight: 400;
   font-size: 0.9em;
   line-height: 1.7em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
   color: var(--primary-color);
 }
 .sidepanel_text ul li {
