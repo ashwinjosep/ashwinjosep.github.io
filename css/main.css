@@ -184,14 +184,15 @@ h3 ul li {
 
 .content a {
   text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: dashed 1px #DDDDDD;
 }
 
 .content a:hover {
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
+  border-bottom: solid 1px;
 }
 .content a h3, li a {
-  text-decoration: none;
   color: var(--primary-color);
 }
 
@@ -201,7 +202,6 @@ li a {
 
 .content a h3:hover, .academics a:hover, li a:hover{
   transition: all 0.3s ease-in-out;
-  text-decoration: none;
   color: var(--alternate-color);
 }
 .content h1 {
