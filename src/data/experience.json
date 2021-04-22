@@ -1,0 +1,72 @@
+[
+  {
+    "company": "Oracle",
+    "link": "https://www.oracle.com/index.html",
+    "location": "Austin, TX",
+    "position": "Member Of Technical Staff",
+    "startDate": "January 2021",
+    "endDate": "Present",
+    "stack": [
+      "react",
+      "nodejs",
+      "typescript",
+      "javascript",
+      "html5",
+      "css3",
+      "java"
+    ]
+  },
+  {
+    "company": "Mathisit",
+    "link": "https://www.cardseer.com/",
+    "location": "Scottsdale, AZ",
+    "position": "Full Stack Software Developer",
+    "startDate": "July 2020",
+    "endDate": "January 2021",
+    "stack": [
+      "rails",
+      "ruby",
+      "html5",
+      "css3",
+      "react",
+      "nodejs",
+      "postgresql",
+      "heroku"
+    ]
+  },
+  {
+    "company": "Arizona State University",
+    "link": "https://www.asu.edu/",
+    "location": "Tempe, AZ",
+    "position": "Research Aide/Software Developer",
+    "startDate": "February 2020",
+    "endDate": "May 2020",
+    "stack": [
+      "django",
+      "python",
+      "html5",
+      "css3",
+      "javascript",
+      "jquery",
+      "docker"
+    ]
+  },
+  {
+    "company": "Deloitte USI",
+    "link": "https://www2.deloitte.com/ui/en.html",
+    "location": "Bengaluru, India",
+    "position": "BTA - Software Developer",
+    "startDate": "August 2016",
+    "endDate": "July 2018",
+    "stack": ["java", "ABAP", "SQL", "SAP ERP"]
+  },
+  {
+    "company": "QBurst Technologies",
+    "link": "https://www.qburst.com/",
+    "location": "Kochi, India",
+    "position": "Software Developer Intern",
+    "startDate": "May 2015",
+    "endDate": "June 2015",
+    "stack": ["apple", "objectivec"]
+  }
+]

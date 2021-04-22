@@ -1,0 +1,97 @@
+@import "./variables";
+
+.experience {
+  padding: 1.3rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  -webkit-box-shadow: -3px 1px 17px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: -3px 1px 17px -5px rgba(0, 0, 0, 0.3);
+}
+
+.experience-circle-item {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: $fs-8;
+    font-weight: $fw-700;
+  }
+}
+
+.experience-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.4rem 0;
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.experience-item-split {
+  display: inline-flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  margin: 0.4rem 0;
+  a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.experience-circle {
+  font-size: $fs-5;
+  margin: 0.5rem 0.5rem;
+}
+
+.experience-line {
+  margin: 0.1rem 0.7rem;
+}
+
+.light-theme {
+  color: $blue1;
+  .experience {
+    background-color: rgba(red($light1), green($light1), blue($light1), 0.7);
+  }
+  .experience-line {
+    border: 0.1rem dashed $blue1;
+  }
+}
+
+.dark-theme {
+  color: $light1;
+  .experience {
+    background-color: rgba(red($blue1), green($blue1), blue($blue1), 0.4);
+  }
+  .experience-line {
+    border: 0.1rem dashed $light1;
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: $fs-16;
+}
+
+.language-text {
+  font-family: $titillum;
+  font-size: $fs-10;
+}
+
+.language-icon {
+  margin: 0.5rem 0;
+}
+
+.experience-details {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}

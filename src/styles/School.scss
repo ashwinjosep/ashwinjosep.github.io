@@ -1,0 +1,48 @@
+@import "./variables";
+
+.school {
+  padding: 1.5rem 0;
+  text-align: center;
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.school-heading {
+  text-align: right;
+}
+
+.school-grid {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: 49% 2% 49%;
+}
+
+.school-details {
+  width: max-content;
+  text-align: left;
+}
+
+.school-line {
+  margin: 0.3rem 1%;
+  width: 0;
+}
+
+.school-date {
+  font-size: $fs-8;
+  font-weight: $fw-700;
+  margin: 0.5rem 0;
+}
+
+.dark-theme {
+  .school-line {
+    border: 0.1rem dashed $light1;
+  }
+}
+.light-theme {
+  .school-line {
+    border: 0.1rem dashed $blue1;
+  }
+}

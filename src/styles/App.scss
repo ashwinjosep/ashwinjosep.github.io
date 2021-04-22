@@ -1,0 +1,121 @@
+@import "./_variables.scss";
+
+body {
+  font-family: $sen;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.light-theme {
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: repeating-linear-gradient(
+    45deg,
+    $light1,
+    $light1 8px,
+    $light2 8px,
+    $light2 16px
+  );
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: $blue2;
+  a {
+    color: $blue1;
+  }
+  a:hover {
+    transition: 0.5s;
+    color: $red1;
+  }
+}
+
+.dark-theme {
+  background-color: rgba(0, 0, 0, 0);
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-image: repeating-linear-gradient(
+    45deg,
+    $blue3,
+    $blue3 8px,
+    $blue2 8px,
+    $blue2 16px
+  );
+  background-size: auto;
+  background-origin: padding-box;
+  background-clip: border-box;
+  color: $light1;
+  a {
+    color: $light1;
+  }
+  a:hover {
+    transition: 0.5s;
+    color: $red1;
+  }
+}
+
+.page {
+  padding: 2rem 5%;
+}
+
+h1 {
+  font-size: $fs-24;
+  font-weight: $fw-800;
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-size: $fs-20;
+  font-weight: $fw-800;
+  margin: 0;
+  font-family: $sen;
+}
+
+h3 {
+  font-size: $fs-18;
+  font-weight: $fw-800;
+  margin: 0;
+  font-family: $sen;
+}
+
+h4 {
+  font-size: $fs-14;
+  font-weight: $fw-400;
+  margin: 0;
+  font-family: $sen;
+}
+
+h5 {
+  font-size: $fs-12;
+  margin: 0;
+  font-family: $sen;
+}
+
+p {
+  font-size: $fs-10;
+  margin: 0.2rem 0;
+  font-family: $sen;
+}
+
+.mr-10 {
+  margin-right: 1rem;
+}
+
+.ml-10 {
+  margin-left: 1rem;
+}
+
+.external-link {
+  margin: 0 0.5rem;
+  font-size: $fs-6;
+}
