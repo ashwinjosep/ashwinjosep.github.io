@@ -1,0 +1,46 @@
+@import "./variables";
+
+.header {
+  padding: 1rem 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: $fs-10;
+}
+
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.nav-link {
+  font-family: $sen;
+  font-weight: $fw-700;
+  padding: 0.5rem 0;
+}
+
+.light-theme {
+  .theme-button {
+    color: $blue1;
+  }
+  .theme-button:hover {
+    color: $red1;
+  }
+}
+
+.dark-theme {
+  .theme-button {
+    color: $light1;
+  }
+
+  .theme-button:hover {
+    color: $red1;
+  }
+}
+
+.theme-button {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 0.5rem 0;
+}

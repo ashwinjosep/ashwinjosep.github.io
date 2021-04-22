@@ -1,0 +1,25 @@
+@import "./variables";
+
+.contact-icon {
+  font-size: $fs-10;
+  transition: 0.5s;
+  margin: 1rem 0rem;
+}
+
+.light-theme {
+  .contact-icon {
+    color: $blue1;
+  }
+  .contact-icon:hover {
+    color: $red1;
+  }
+}
+
+.dark-theme {
+  .contact-icon {
+    color: $light1;
+  }
+  .contact-icon:hover {
+    color: $red1;
+  }
+}
