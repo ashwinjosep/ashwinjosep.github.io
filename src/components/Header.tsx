@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,42 +11,50 @@ import {
 import useDimensions from "../hooks/useDimensions";
 
 interface HeaderProps {
+  page: string;
   onThemeSwitch: any;
   theme: string;
+  onClick: any;
 }
 
 const Header = (props: HeaderProps) => {
   const minWidth = 480;
   const { width } = useDimensions();
 
+  const checkActive = (page: string) => {
+    return page === props.page ? "nav-link-active" : "";
+  };
+
   return (
     <div className="header">
-      {width > minWidth ? (
-        <div className="header-links">
-          <Link className="nav-link active mr-10" to="/">
-            Home
-          </Link>
-          <Link className="nav-link mr-10" to="/experience">
-            Experience
-          </Link>
-          <Link className="nav-link" to="/academics">
-            Academics
-          </Link>
-        </div>
-      ) : (
-        <div className="header-links">
-          <Link className="nav-link mr-10" to="/">
-            <FontAwesomeIcon icon={faHome} />
-          </Link>
-          <Link className="nav-link mr-10" to="/experience">
+      <div className="header-links">
+        <button
+          className={`nav-link mr-10 ${checkActive("home")}`}
+          onClick={() => props.onClick("home")}
+        >
+          {width > minWidth ? `Home` : <FontAwesomeIcon icon={faHome} />}
+        </button>
+        <button
+          className={`nav-link mr-10 ${checkActive("experience")}`}
+          onClick={() => props.onClick("experience")}
+        >
+          {width > minWidth ? (
+            `Experience`
+          ) : (
             <FontAwesomeIcon icon={faBriefcase} />
-          </Link>
-          <Link className="nav-link" to="/academics">
+          )}
+        </button>
+        <button
+          className={`nav-link ${checkActive("academics")}`}
+          onClick={() => props.onClick("academics")}
+        >
+          {width > minWidth ? (
+            `Academics`
+          ) : (
             <FontAwesomeIcon icon={faGraduationCap} />
-          </Link>
-        </div>
-      )}
-
+          )}
+        </button>
+      </div>
       {props.theme === "light" ? (
         <FontAwesomeIcon
           className="theme-button"

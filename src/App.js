@@ -1,31 +1,45 @@
 import React, { useState } from "react";
-import { Switch, Route, BrowserRouter } from "react-router-dom";
-import ExperienceContainer from "./pages/Experience/ExperienceContainer";
 import HomeContainer from "./pages/Home/HomeContainer";
-import ErrorContainer from "./pages/Error/ErrorContainer";
-import AcademicsContainer from "./pages/Academics/AcademicsContainer";
 import Header from "./components/Header";
 import "./styles/App.scss";
+import ExperienceContainer from "./pages/Experience/ExperienceContainer";
+import AcademicsContainer from "./pages/Academics/AcademicsContainer";
 
 function App() {
   const [theme, setTheme] = useState("dark");
+  const [page, setPage] = useState("home");
+
+  const onPageSwitch = (selectedPage) => {
+    setPage(selectedPage);
+  };
 
   const onThemeSwitch = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
 
+  const renderContent = () => {
+    switch (page) {
+      case "home":
+        return <HomeContainer />;
+      case "experience":
+        return <ExperienceContainer />;
+      case "academics":
+        return <AcademicsContainer />;
+      default:
+        return <HomeContainer />;
+    }
+  };
+
   return (
-    <BrowserRouter>
-      <div className={`app ${theme}-theme`}>
-        <Header onThemeSwitch={onThemeSwitch} theme={theme} />
-        <Switch>
-          <Route path="/" exact component={HomeContainer} />
-          <Route path="/experience" exact component={ExperienceContainer} />
-          <Route path="/academics" exact component={AcademicsContainer} />
-          <Route exact component={ErrorContainer} />
-        </Switch>
-      </div>
-    </BrowserRouter>
+    <div className={`app ${theme}-theme`}>
+      <Header
+        page={page}
+        onThemeSwitch={onThemeSwitch}
+        theme={theme}
+        onClick={onPageSwitch}
+      />
+      {renderContent()}
+    </div>
   );
 }
 

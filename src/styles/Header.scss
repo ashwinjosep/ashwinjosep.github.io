@@ -18,23 +18,41 @@
   font-family: $sen;
   font-weight: $fw-700;
   padding: 0.5rem 0;
+  border: none;
+  border-bottom: 0.2rem solid transparent;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  border-bottom: 0.2rem solid $red1 !important;
+  transition: 0.5s;
 }
 
 .light-theme {
-  .theme-button {
+  .theme-button,
+  .nav-link {
     color: $blue1;
   }
-  .theme-button:hover {
+  .nav-link-active {
+    border-bottom: 0.2rem solid $blue1;
+  }
+  .theme-button:hover,
+  .nav-link:hover {
     color: $red1;
   }
 }
 
 .dark-theme {
-  .theme-button {
+  .theme-button,
+  .nav-link {
     color: $light1;
   }
-
-  .theme-button:hover {
+  .nav-link-active {
+    border-bottom: 0.2rem solid $light1;
+  }
+  .theme-button:hover,
+  .nav-link:hover {
     color: $red1;
   }
 }
