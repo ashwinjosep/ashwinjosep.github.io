@@ -1,0 +1,1 @@
+export const GOOGLE_ANALYTICS_ID = "UA-157159399-1";
