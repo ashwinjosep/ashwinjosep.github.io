@@ -1,1 +1,1 @@
-export const GOOGLE_ANALYTICS_ID = "UA-157159399-1";
+export const GOOGLE_ANALYTICS_ID = "G-2VT4KV68X7";
